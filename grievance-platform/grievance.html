@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Grievance - Community Grievance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-content">
+                <h1>Citizen Care Portal</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="grievance.html">Submit Grievance</a></li>
+                        <li><a href="status-check.html">Check Status</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="admin-login.html">Admin Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Introduction Section -->
+            <section class="intro">
+                <h2>Submit Your Grievance</h2>
+                <p>We are committed to addressing your concerns efficiently. Follow the instructions below to submit a grievance about community issues.</p>
+            </section>
+
+            <!-- How to Submit a Grievance Section -->
+            <section class="how-to-submit">
+                <h2>How to Submit a Grievance</h2>
+                <ol>
+                    <li><strong>Provide Details:</strong> Clearly describe the issue you are facing. Include as much information as possible to help us understand and address the problem.</li>
+                    <li><strong>Upload Supporting Documents:</strong> Attach any relevant documents or images that support your grievance. This helps in the investigation and resolution process.</li>
+                    <li><strong>Submit Your Form:</strong> Review your information and submit the form. You will receive a confirmation email with a unique grievance ID for tracking.</li>
+                </ol>
+            </section>
+
+            <!-- Grievance Submission Form -->
+            <section class="grievance-form">
+                <h2>Submit Your Grievance</h2>
+                <form action="submit_grievance_process.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">Type of Issue:</label>
+                        <select id="issue" name="issue" required>
+                            <option value="service">Service</option>
+                            <option value="safety">Safety</option>
+                            <option value="cleanliness">Cleanliness</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="documents">Upload Documents:</label>
+                        <input type="file" id="documents" name="documents[]" multiple>
+                    </div>
+                    <button type="submit" class="btn">Submit Grievance</button>
+                </form>
+            </section>
+
+            <!-- Tips for Effective Grievance Submission -->
+            <section class="tips">
+                <h2>Tips for Effective Grievance Submission</h2>
+                <ul>
+                    <li><strong>Be Specific:</strong> Provide detailed information about the issue. Specifics help in understanding and addressing the problem more effectively.</li>
+                    <li><strong>Attach Evidence:</strong> Any photos, documents, or other evidence can greatly assist in the resolution process.</li>
+                    <li><strong>Keep Records:</strong> Save the confirmation email and grievance ID for future reference and tracking.</li>
+                    <li><strong>Follow Up:</strong> If you do not receive updates, feel free to follow up on your grievance status through our platform.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Community Grievance Platform</p>
+        </footer>
+    </div>
+</body>
+</html>
